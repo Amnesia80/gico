@@ -1,4 +1,4 @@
-<p>test</p>
-
-<br>
-TESTEST
+<?php
+$this->load->helper('html');
+echo heading('CoUCOUCOUCOU!', 3);
+?>
