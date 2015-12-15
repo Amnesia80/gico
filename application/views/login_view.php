@@ -9,11 +9,11 @@
             <div style="display:none;"><input type="hidden" name="_method" value="POST"></div>        
             <div class="form-group">
               <label class="control-label" for="identifiant">Identifiant</label>
-              <input type="text" name="identifiant" id="username" class="form-control">
+              <input type="text" name="username" id="username" class="form-control">
             </div>        
             <div class="form-group">
               <label class="control-label" for="motdepasse">Mot de passe</label>
-              <input type="password" name="motdepasse" id="password" class="form-control">
+              <input type="password" name="password" id="password" class="form-control">
             </div>        
             <div class="submit">
               <input type="submit" class="btn btn-primary" value="Se connecter">

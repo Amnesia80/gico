@@ -13,8 +13,8 @@ class VerifyLogin extends CI_Controller {
    //This method will have the credentials validation
    $this->load->library('form_validation');
 
-   $this->form_validation->set_rules('username', 'Identifiant', 'required');
-   $this->form_validation->set_rules('password', 'Mot de passe', 'required|callback_check_database');
+   $this->form_validation->set_rules('username', 'username', 'trim|required');
+   $this->form_validation->set_rules('password', 'password', 'required|callback_check_database');
 
    if($this->form_validation->run() == FALSE)
    {
@@ -40,7 +40,6 @@ class VerifyLogin extends CI_Controller {
  {
    //Field validation succeeded.  Validate against database
    $username = $this->input->post('username');
-
    //query the database
    $result = $this->user->login($username, $password);
 
@@ -51,7 +50,8 @@ class VerifyLogin extends CI_Controller {
      {
        $sess_array = array(
          'id' => $row->id,
-         'username' => $row->username
+         'username' => $row->identifiant,
+         'role' => $row->role_id
        );
        $this->session->set_userdata('logged_in', $sess_array);
      }
@@ -59,7 +59,7 @@ class VerifyLogin extends CI_Controller {
    }
    else
    {
-     $this->form_validation->set_message('check_database', 'Invalid username or password');
+     $this->form_validation->set_message('check_database', 'Identifiant ou mot de passe incorrect !');
      return false;
    }
  }
