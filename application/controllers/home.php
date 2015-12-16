@@ -29,6 +29,11 @@ class Home extends CI_Controller {
    redirect('login', 'refresh');
  }
 
+ function reset_mdp()
+ {
+  
+ }
+
 }
 
 ?>

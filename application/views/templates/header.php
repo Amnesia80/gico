@@ -38,7 +38,7 @@ if ( $this->session->userdata('logged_in') == NULL)
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="<?php echo base_url();?>">
                         <img src="<?php echo base_url();?>assets/img/gico.logo.png" alt="Logo GICO" class="application-logo">GICO</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">

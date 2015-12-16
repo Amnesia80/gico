@@ -1,6 +1,4 @@
-
-        <div class="container">
-
+  <div class="container">
         <div class="col-md-4">
           <h2>Connexion</h2>
           <hr class="colorgraph">
@@ -19,19 +17,21 @@
               <input type="submit" class="btn btn-primary" value="Se connecter">
             </div>   
           </form>
+          <a href="<?php echo site_url();?>/resetmdp"> Mot de passe oublié ? </a> 
         </div>        
-<div class="col-md-2"> </div>
+        <div class="col-md-2"> </div>
         <div class="col-md-6"> 
-        <h2>Inscription</h2>
-          <hr class="colorgraph">
-<p>Cette application permet aux étudiants du Master STIC - ISRI, MIAGE et 2IBS de choisir leurs UE optionnelles</p>
-
-<p>Pour choisir vos UEs optionnelles vous devez :</p>
-
-<ol>
-    <li>Vous inscrire et attendre le mail d'activation de votre compte - Vérifiez votre adresse mail!</li>
-    <li>Vous loguer sur le système avec les login/password que vous avez choisis</li>
-    <li>Faire vos choix à chaque semestre</li>
-</ol></div>
+            <h2>Inscription</h2>
+            <hr class="colorgraph">
+            <p>Cette application permet aux étudiants du Master STIC - ISRI, MIAGE et 2IBS de choisir leurs UE optionnelles</p>
+            <p>Pour choisir vos UEs optionnelles vous devez :</p>
+            <ol>
+                      <li>Vous inscrire et attendre le mail d'activation de votre compte - Vérifiez votre adresse mail!</li>
+                      <li>Vous loguer sur le système avec les login/password que vous avez choisis</li>
+                      <li>Faire vos choix à chaque semestre</li>
+            </ol>
+            <p><a href="#"> Pas encore inscrit ? </a></p>
         </div>
+    </div>
+  </div>
 
